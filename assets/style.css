@@ -1,3 +1,8 @@
+body {
+  background-image: url(./assets/images/pattern.png);
+}
+
+/* Nav */
 nav {
   border-bottom: 3px #ccc solid;
 }
@@ -9,4 +14,25 @@ nav {
 #secondH1 {
   margin: -10px 0px;
   background-color: #4aaaa5;
+}
+
+/* Sections */
+h2 {
+  color: #4aaaa5;
+}
+
+#greyLine {
+  background: #ccc;
+  height: 2px;
+}
+
+section {
+  margin-bottom: 200px;
+}
+
+/* Footer */
+footer {
+  border-top: 8px solid #4aaaa5;
+  background: #666;
+  color: #ccc;
 }

@@ -18,21 +18,25 @@
     ></script>
     <title>Bill Kamberos | Developer</title>
   </head>
-  <body style="background-image: url(./assets/images/pattern.png);">
+  <body>
     <!--  -->
     <!-- Navbar -->
     <!--  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white px-5">
+      <!-- Made the container a flexbox so I can manipulte the h1, navigation, and button -->
       <div class="container d-flex flex-column flex-sm-row px-0">
+        <!-- This H1 is for phone screen sizes -->
         <h1
           id="firstH1"
           class="text-white d-sm-none d-xs-block text-center vw-100 mt-n2 ml-n5 py-3"
         >
           Bill Kamberos
         </h1>
+        <!-- H1 for anything larger than a phone -->
         <h1 id="secondH1" class="text-white d-sm-block d-none py-3 px-2">
           Bill Kamberos
         </h1>
+        <!-- Button bootstrap margin styling for different screen sizes -->
         <button
           class="navbar-toggler mt-2 mt-sm-0 ml-sm-0 ml-n5"
           type="button"
@@ -44,7 +48,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        <!-- *justify content move the links to the right side
+             *text-sm-right keeps the drop down menu on the right
+             *text-center centers the dropdown menu when its phone sized -->
         <div
           class="collapse navbar-collapse justify-content-end text-sm-right text-center ml-n5 ml-sm-0"
           id="navbarTogglerDemo02"
@@ -69,16 +75,13 @@
     <!--  -->
     <!-- Section -->
     <!--  -->
-    <section style="margin-bottom: 200px;">
+    <section>
       <div class="container bg-white my-4 p-4">
         <div class="row">
-          <div class="col"><h2 style="color: #4aaaa5;">About Me</h2></div>
+          <div class="col"><h2>About Me</h2></div>
         </div>
         <div class="row">
-          <div
-            class="col mb-4 mt-2 mx-3"
-            style="background: #ccc; height: 2px;"
-          ></div>
+          <div id="greyLine" class="col mb-4 mt-2 mx-3"></div>
         </div>
         <div class="row">
           <div class="col-sm-4">
@@ -118,18 +121,14 @@
     <!--  -->
     <!-- Footer -->
     <!--  -->
-    <footer
-      class="footer fixed-bottom mt-auto py-4 d-none d-sm-block"
-      style="border-top: 8px solid #4aaaa5;background: #666; color: #ccc;"
-    >
+    <!-- Fixed footer for larger screens -->
+    <footer class="footer fixed-bottom mt-auto py-4 d-none d-sm-block">
       <div class="container text-center">
         <p>Copyright &copy;</p>
       </div>
     </footer>
-    <footer
-      class="footer mt-auto py-4 d-block d-sm-none"
-      style="border-top: 8px solid #4aaaa5;background: #666; color: #ccc;"
-    >
+    <!-- Block footer for phone screen sizes -->
+    <footer class="footer mt-auto py-4 d-block d-sm-none">
       <div class="container text-center">
         <p>Copyright &copy;</p>
       </div>
